@@ -1,0 +1,37 @@
+{
+    "my_qq": {
+        "description": "你的QQ号",
+        "type": "string",
+        "hint": "你自己的QQ号，用于判断是否被at",
+        "obvious_hint": true,
+        "default": "123456789"
+    },
+    "admin_whitelist": {
+        "description": "管理员白名单",
+        "type": "string",
+        "hint": "管理员QQ号列表，多个QQ号用逗号分隔。例如：123456789,987654321",
+        "obvious_hint": true,
+        "default": "123456789"
+    },
+    "monitor_config": {
+        "description": "监控配置",
+        "type": "text",
+        "hint": "监控配置，每行一个群聊配置。格式：群号:用户1,用户2,用户3\n示例：\n987654321:111111111,222222222\n123456789:333333333",
+        "obvious_hint": true,
+        "default": "987654321:111111111"
+    },
+    "enable_reply_message": {
+        "description": "启用自定义回复消息",
+        "type": "bool",
+        "hint": "启用后可以自定义回复消息内容，关闭则只at用户不发送文字",
+        "obvious_hint": true,
+        "default": false
+    },
+    "reply_message": {
+        "description": "自定义回复消息",
+        "type": "string",
+        "hint": "当被at时发送的自定义消息内容（仅在启用自定义回复消息时生效）",
+        "obvious_hint": true,
+        "default": "收到！"
+    }
+}
